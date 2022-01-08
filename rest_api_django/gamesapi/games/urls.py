@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import re_path
 from games import views
 
 
 urlpatterns = [
-    url(r'^games/$', views.game_list),
-    url(r'^games/(?P<pk>[0-9]+)/$', views.game_detail),
+    re_path(r'^games/$', views.game_list),
+    re_path(r'^games/(?P<pk>[0-9]+)/$', views.game_detail),
 ]
