@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from games.models import Game, GameCategory, Player, PlayerScore
 import games.views
-from hyperlinked_API_django.games.views import game_list
 
 
 
