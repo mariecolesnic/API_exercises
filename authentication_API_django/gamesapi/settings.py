@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS':
-    'rest_framework.pagination.LimitOffsetPagination',
+    'games.pagination.LimitOffsetPaginationWithMaxLimit',
    'PAGE_SIZE': 5
 }
 
