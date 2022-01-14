@@ -29,5 +29,11 @@ urlpatterns = [
            name=views.PlayerScoreDetail.name),
     re_path(r'^$', views.ApiRoot.as_view(),
             name=views.ApiRoot.name),
+    re_path(r'^users/$',
+           views.UserList.as_view(),
+           name=views.UserList.name),
+    re_path(r'^users/(?P<pk>[0-9]+)/$',
+           views.UserDetail.as_view(),
+           name=views.UserDetail.name),
 ]
 
